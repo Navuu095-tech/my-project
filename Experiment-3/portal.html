@@ -2,37 +2,26 @@
 <html lang="en">
 <head>
   <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Dashboard</title>
 </head>
+
 <body>
-  <div class="dashboard">
-    <header>
-      <h1>Admin Dashboard</h1>
-      <label class="switch">
-        <input type="checkbox" id="modeToggle">
-        <span class="slider"></span> Dark Mode
-      </label>
-    </header>
-
-    <div class="main">
-      <nav class="sidebar">
-        <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Users</a></li>
-          <li><a href="#">Settings</a></li>
-        </ul>
-      </nav>
-
-      <section class="content">
-        <h2>Welcome, Admin!</h2>
-        <p>This is the main content area. Add charts, tables, or reports here.</p>
-      </section>
-    </div>
-
-    <footer>
-       2025 Admin Panel
-    </footer>
+  <input id="toggle" type="checkbox">
+ <div class="dashboard">
+  <header><h3>Admin Dashboard</h3>
+    <label for="toggle">Dark Mode</label>
+  </header>
+  <nav><ul>
+    <li class="discs"><a href="#">Home</a></li>
+    <li class="discs"><a href="#">Users</a></li>
+    <li class="discs"><a href="#">Settings</a></li>
+    </ul>
+  </nav>
+  <main><h2>Welcome Admin!</h2>
+  <span>This is the main content area. Add charts, tables, reports here.</span></main>
+  <footer>©2025 Admin Panel</footer>
   </div>
-<script src="admin.js"></script>
-  
 </body>
-</html>
+</html> 

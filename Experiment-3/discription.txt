@@ -1,36 +1,39 @@
-1. HTML Structure:
+ 1. HTML Structure:
 
-*Header: Shows title and dark mode toggle.
-*Sidebar: Vertical menu with links (Home, Users, Settings).
-*Main Content: Welcome message; space for charts/reports.
-*Footer: Simple copyright.
-*Tags Used: `header`, `nav`, `main`, `footer`.
+*Header: Displays the title “Admin Dashboard” and a checkbox toggle labeled “Dark Mode” for switching themes.
+*Sidebar (nav): Vertical navigation menu with links to Home, Users, and Settings.
+*Main Content: Contains a welcome message and space to add charts, tables, or reports.
+*Footer: Displays a simple copyright notice.
+*Tags Used: Semantic HTML tags including `<header>`, `<nav>`, `<main>`, and `<footer>`.
 
 2. CSS Layout & Styling:
 
-Layout:CSS Grid creates 4 sections.
-*Styles: Backgrounds, spacing, text, and links styled.
-*Themes: Light and dark themes for comfort.
-*Dark Mode: Changes colors for low-light viewing.
+*Layout: Utilizes CSS Grid to organize the page into header, sidebar (nav), main content area, and footer sections.
+*Styles: Applies background colors, padding, borders, font sizes, and colors to create a clean, readable interface.
+*Themes: Defines CSS variables for light mode colors and overrides those variables for dark mode colors using the checkbox toggle.
+*Dark Mode: When the checkbox is checked, background and text colors switch to darker tones for comfortable low-light viewing.
 
-3. JavaScript Theme Switching:
+ 3. Test Cases:
 
-*Toggle:Checkbox switches themes.
-*Class Change:JS adds/removes `dark-mode` on `<body>`.
-*Instant Effect: Changes style without reloading the page.
+1. On page load, all sections (header, nav, main, footer) display with correct layout and styles.
+2. Checking the “Dark Mode” toggle switches colors to dark theme instantly without reload.
+3. Unchecking the toggle reverts back to light theme colors.
+4. Navigation links remain visible and readable in both modes.
+5. Keyboard navigation focuses toggle and links properly for accessibility.
+6. CSS variables update dynamically based on toggle state as expected.
 
-4. Key Learning Points:
+ 4. Key Learning Points:
 
-* Use semantic HTML for clear structure.
-* Create layouts using CSS Grid.
-* Style using classes and variables.
-* Toggle themes with JavaScript.
+* Use **semantic HTML** elements for better structure and accessibility.
+* Create page layouts with **CSS Grid** for clean sectioning.
+* Use **CSS variables** to easily manage and switch between themes.
+* Implement **dark mode** toggle functionality without JavaScript by leveraging the `:checked` pseudo-class.
 
-5. Learning Outcomes:
+ 5. Learning Outcomes:
 
-* Know basic HTML structure.
-* Build layouts with CSS Grid.
-* Style sections using CSS.
-* Add dark mode with JS.
-* Make the page interactive.
+* Understand the basic semantic structure of a web page.
+* Build responsive and organized layouts using CSS Grid.
+* Style web components with CSS variables and selectors.
+* Create an interactive dark mode toggle using only HTML and CSS.
+* Recognize how CSS can replace simple JavaScript toggles for theme switching.
 

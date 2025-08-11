@@ -1,78 +1,79 @@
-body {
-  margin: 0;
-  font-family: Arial, sans-serif;
+:root{
+  --bg-color-header:limegreen;
+  --bg-color-footer:limegreen;
+  --bg-color-nav:rgb(214, 214, 214);
+  --bg-color-main:white;
+  --color-main:black;
 }
 
-.dashboard {
+header{
+  color: white;
+  border: 1px solid black;
+  background-color: var(--bg-color-header);
+  grid-column:1/span 2;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items:center; 
+}
+
+header h3 {
+  font-size: 1.8rem;
+  padding: 10px;
+}
+header label{
+  padding: 50px;
+  font-size: large;
+}
+
+main{
+  padding: 40px;
+  border: 1px solid black;
+  background-color: var(--bg-color-main);
+  color: var(--color-main);
+}
+
+main span{
+  font-size: large;
+}
+
+nav{
+  padding: 50px;
+  color: white;
   display: flex;
   flex-direction: column;
+  border: 1px solid black;
+  background-color: var(--bg-color-nav);
+}
+.discs{
+  color: black;
+}
+
+footer{
+  font-size: larger;
+  text-align: center;
+  color: white;
+  border: 1px solid black;
+  background-color: var(--bg-color-footer);
+  grid-column:1/span 2;
+  padding: 20px;
+}
+
+.dashboard{
+  display: grid;
+  grid-template-columns: 200px 1fr;
+  grid-template-rows: 80px auto 70px;
   height: 100vh;
 }
 
-header {
-  background-color:green;
-  color: white;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 10px 20px;
+#toggle {
+  display: none;
 }
 
-.sidebar {
-  background-color:rgb(164, 163, 163);
-  width: 200px;
-  padding: 20px;
-}
-
-.sidebar ul {
-  list-style: none;
-  padding: 0;
-}
-
-.sidebar a {
-  text-decoration: none;
-  color:rgb(35, 97, 109);
-  display: block;
-  margin-bottom: 10px;
-}
-
-.main {
-  display: flex;
-  flex: 1;
-}
-
-.content {
-  padding: 20px;
-  flex: 1;
-}
-
-footer {
-  background-color:green;
-  color: white;
-  text-align: center;
-  padding: 10px;
-}
-
-.switch {
-  color: white;
-  font-size: 14px;
-  cursor: pointer;
-}
-
-.dark-mode {
-  background-color: black;
-  color:white;
-}
-
-.dark-mode header,
-.dark-mode footer {
-  background-color:rgb(22, 22, 22);
-}
-
-.dark-mode .sidebar {
-  background-color:rgb(132, 129, 129);
-}
-
-.dark-mode .sidebar a {
-  color:white;
+input:checked ~ .dashboard  {
+  --bg-color-header:gray;
+  --bg-color-footer:gray;
+  --bg-color-nav:rgb(181, 181, 181);
+  --bg-color-main:black;
+  --color-main:white;
 }
