@@ -1,0 +1,78 @@
+ 1. HTML Structure:
+  Header:
+
+   * A `<h1>` element is used to display the main title: “Product List”.
+
+  Main Content:
+
+  * A `<select>` dropdown allows users to "filter products" by category (Clothing, Electronics, Books).
+  * A list of product items is displayed below the dropdown.
+  * Each product is marked with a **custom data attribute** (`data-category`) to define its category.
+
+ Tags Used:
+
+  * Uses "semantic HTML elements" like `<h1>`, `<select>`, `<option>`, and `<div>`.
+  * A wrapper `<div>` with class `container` is used to **group and center** the layout content.
+
+ 2. CSS Layout & Styling:
+
+ Layout:
+
+  * The full layout is wrapped in a `.container` div, which is "centered" using Flexbox.
+  * The container has a **maximum width** to make it responsive and readable on all devices.
+
+ Styles:
+
+  * "Background color" is light to keep the look soft and clean.
+  * Padding and rounded corners** give a card-style appearance.
+  * "Box shadows" are used to give depth and a modern design feel.
+  * The dropdown is styled to be consistent and accessible.
+  * Products are displayed in a vertical list, with spacing between them.
+  * A '.hidden' class is used to hide elements dynamically when filtering.
+
+ 3. JavaScript Functionality:
+
+  Theory:
+
+  *JavaScript enables dynamic filtering without reloading the page.
+  *Listens to changes in the dropdown and shows/hides products accordingly.
+
+ Logic:
+
+  *Detects which category is selected.
+  *Loops through all product items.
+  *If the item's data-category matches the selected one (or "all" is selected), it is shown.
+  *Others are hidden using the .hidden class.
+
+ Event Used:
+
+ *'change' event on the <select> element.
+
+ 4. Test Cases:
+
+| Test Case            | Expected Result                                                      |
+                       | 
+| Page Load            | Page displays title, dropdown, and all products in a clean layout.   |
+| Selecting “Clothing” | Only clothing items are visible, others are hidden.                  |
+| Selecting “Books”    | Only books are visible, electronics and clothing are hidden.         |
+| Selecting “All”      | All products are visible regardless of category.                     |
+| Responsiveness       | Layout adjusts properly on mobile and smaller screen sizes.          |
+| Accessibility        | Dropdown is focusable and operable with keyboard and screen readers. |
+
+ 5. Key Learning Points:
+
+ * Learn how to use "custom data attributes" (`data-category`) to categorize items.
+ * Understand how to write "event-driven JavaScript" using the `change` event.
+ * Practice "DOM manipulation" by adding or removing classes dynamically.
+ * Reinforce the concept of "separation of concerns": structure (HTML), design (CSS), and behavior (JS).
+ * Improve the user interface using "conditional visibility".
+
+ 6. Learning Outcomes:
+
+ * You will understand how to "create interactive dropdown filters" on a webpage.
+ * You will learn how to "access and manipulate HTML elements" using JavaScript.
+ * You will know how to "style a list-based layout" for better readability and UX.
+ * You will be able to build a "responsive and clean user interface".
+ * You will see how small JavaScript logic can make "webpages dynamic and user-friendly".
+ * You will gain hands-on experience in building "category-based filtering systems".
+
