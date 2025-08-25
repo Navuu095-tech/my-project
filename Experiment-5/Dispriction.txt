@@ -12,7 +12,7 @@
  Tags Used:
 
   * Uses "semantic HTML elements" like `<h1>`, `<select>`, `<option>`, and `<div>`.
-  * A wrapper `<div>` with class `container` is used to **group and center** the layout content.
+  * A wrapper `<div>` with class `container` is used to "group and center" the layout content.
 
  2. CSS Layout & Styling:
 
