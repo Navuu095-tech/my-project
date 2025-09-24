@@ -1,0 +1,19 @@
+The HTML builds a simple banking UI layout.
+
+It includes a container to center the content.
+
+A balance display shows the current account value.
+
+Two buttons—Deposit and Withdraw—are provided.
+
+The structure uses semantic and clean class names.
+
+CSS centers the layout using Flexbox on the body.
+
+.outer-container and .inner-container define size and background.
+
+.balance is styled with green color and larger font.
+
+Buttons are color-coded (green for deposit, red for withdraw).
+
+The design is clean, modern, and easy to interact with.
